@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    
+}
+button{
+    margin: 0 !important;
+}
+.row {
+    --bs-gutter-x: 0;
+}

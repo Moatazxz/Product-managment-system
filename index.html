@@ -1,0 +1,71 @@
+
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="text-center my-5">Product Management System</h1>
+<div class="row ">
+
+<div class="col-lg-5">
+<div class=" mx-3 shadow p-4 mb-5">
+   <form onsubmit="return false;">
+                <label for="productName"   class="fw-bold">Product Name :</label>
+                <input type="text" required class="form-control my-2" id="productName">
+           
+                <label for="productPrice"  class="fw-bold">Product Price :</label>
+                <input type="text" required class="form-control my-2" id="productPrice" >
+        
+                <label for="productCategory"  class="fw-bold">Product Category :</label>
+                <input type="text" required class="form-control my-2" id="productCategory" >
+              
+              
+                <label for="productDescription"  class="fw-bold">Product Description :</label>
+              <input type="text" required placeholder="New or used" class="form-control my-2" id="productDescription" >
+         
+        
+              <button  onclick="pushProduct()" id="mainBtn" class="btn btn-dark fw-bold border-2 rounded-pill  my-3">Add Product</button>
+              <button  onclick="clearForm()" class="btn float-end btn-danger fw-bold border-2 rounded-pill my-3">clear</button>
+   </form>
+           
+</div>
+</div>
+    
+
+
+<div class="col-lg-7  ">
+  <div class="m-auto w-50  text-center">
+  
+    <label for="search"  class="fw-bolder  text-black-50">Search In The Products</label>
+    <input type="text" onkeyup="searchProduct(this.value)"  class="form-control rounded-pill my-2 border-secondary border-2" placeholder="Enter product Name" id="search" >
+  </div>
+
+  <table style="width: 90%;" class="table   border-2 mx-auto py-3 text-center">
+      <thead>
+           <th>Index</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>category</th>
+          <th>Description</th>
+          <th>Update</th>
+          <th>Delete</th>
+      </thead>
+      <tbody id="productTable">
+      </tbody>
+  
+  </table>
+</div>
+
+</div>
+    <script src="js.js"></script>  
+<script src="bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+
+</html>
